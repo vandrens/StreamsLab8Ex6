@@ -108,13 +108,31 @@ public class Library {
 
     public static void main(String[] args) {
         List<Book> books = new ArrayList<>();
-        books.add(new Book("Title1", "Author1", 2000, 20.0, "Genre1"));
-        books.add(new Book("Title2", "Author2", 2005, 25.0, "Genre2"));
-        // Add more books here
+        books.add(new Book("The Great Gatsby", "F. Scott Fitzgerald", 1925, 10.99, "Fiction"));
+        books.add(new Book("To Kill a Mockingbird", "Harper Lee", 1960, 12.99, "Fiction"));
+        books.add(new Book("1984", "George Orwell", 1949, 9.99, "Fiction"));
+        books.add(new Book("Pride and Prejudice", "Jane Austen", 1813, 7.99, "Fiction"));
+        books.add(new Book("The Catcher in the Rye", "J.D. Salinger", 1951, 11.99, "Fiction"));
+        books.add(new Book("Animal Farm", "George Orwell", 1945, 8.99, "Fiction"));
+        books.add(new Book("The Hobbit", "J.R.R. Tolkien", 1937, 9.99, "Fantasy"));
+        books.add(new Book("The Lord of the Rings", "J.R.R. Tolkien", 1954, 15.99, "Fantasy"));
+        books.add(new Book("Harry Potter and the Sorcerer's Stone", "J.K. Rowling", 1997, 14.99, "Fantasy"));
+        books.add(new Book("The Da Vinci Code", "Dan Brown", 2003, 11.99, "Mystery"));
+        books.add(new Book("The Girl with the Dragon Tattoo", "Stieg Larsson", 2005, 13.99, "Mystery"));
+        books.add(new Book("Gone Girl", "Gillian Flynn", 2012, 10.99, "Mystery"));
+        books.add(new Book("The Hunger Games", "Suzanne Collins", 2008, 12.99, "Young Adult"));
+        books.add(new Book("Divergent", "Veronica Roth", 2011, 11.99, "Young Adult"));
+        books.add(new Book("The Fault in Our Stars", "John Green", 2012, 10.99, "Young Adult"));
+        books.add(new Book("The Alchemist", "Paulo Coelho", 1988, 9.99, "Fiction"));
+        books.add(new Book("The Kite Runner", "Khaled Hosseini", 2003, 10.99, "Fiction"));
+        books.add(new Book("The Road", "Cormac McCarthy", 2006, 11.99, "Fiction"));
+        books.add(new Book("Life of Pi", "Yann Martel", 2001, 12.99, "Fiction"));
+        books.add(new Book("The Book Thief", "Markus Zusak", 2005, 9.99, "Fiction"));
+
+
 
         Library library = new Library(books);
 
-        // Advanced queries
         System.out.println("Author with most books: " + library.authorWithMostBooks());
         System.out.println("Most popular genre: " + library.mostPopularGenre());
         System.out.println("Year with most published books: " + library.yearWithMostPublishedBooks());
